@@ -1,3 +1,7 @@
+if ! command -v gcp &> /dev/null
+then
+    brew install coreutils
+fi
 echo "hello world,$1"
 echo "files:"
 find $1 -type f -print
